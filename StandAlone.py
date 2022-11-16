@@ -254,94 +254,12 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 242, 594))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 259, 289))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.pushButton_4 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.buttonGroup = QtWidgets.QButtonGroup(MainWindow)
-        self.buttonGroup.setObjectName("buttonGroup")
-        self.buttonGroup.addButton(self.pushButton_4)
-        self.verticalLayout_2.addWidget(self.pushButton_4)
-        self.pushButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton.setObjectName("pushButton")
-        self.buttonGroup.addButton(self.pushButton)
-        self.verticalLayout_2.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.buttonGroup.addButton(self.pushButton_2)
-        self.verticalLayout_2.addWidget(self.pushButton_2)
-        self.pushButton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.buttonGroup.addButton(self.pushButton_3)
-        self.verticalLayout_2.addWidget(self.pushButton_3)
-        self.pushButton_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.buttonGroup.addButton(self.pushButton_5)
-        self.verticalLayout_2.addWidget(self.pushButton_5)
-        self.pushButton_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.buttonGroup.addButton(self.pushButton_6)
-        self.verticalLayout_2.addWidget(self.pushButton_6)
-        self.pushButton_7 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.buttonGroup.addButton(self.pushButton_7)
-        self.verticalLayout_2.addWidget(self.pushButton_7)
-        self.pushButton_8 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.buttonGroup.addButton(self.pushButton_8)
-        self.verticalLayout_2.addWidget(self.pushButton_8)
-        self.pushButton_9 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_9.setObjectName("pushButton_9")
-        self.buttonGroup.addButton(self.pushButton_9)
-        self.verticalLayout_2.addWidget(self.pushButton_9)
-        self.pushButton_10 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_10.setObjectName("pushButton_10")
-        self.buttonGroup.addButton(self.pushButton_10)
-        self.verticalLayout_2.addWidget(self.pushButton_10)
-        self.pushButton_11 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_11.setObjectName("pushButton_11")
-        self.buttonGroup.addButton(self.pushButton_11)
-        self.verticalLayout_2.addWidget(self.pushButton_11)
-        self.pushButton_12 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_12.setObjectName("pushButton_12")
-        self.buttonGroup.addButton(self.pushButton_12)
-        self.verticalLayout_2.addWidget(self.pushButton_12)
-        self.pushButton_13 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_13.setObjectName("pushButton_13")
-        self.buttonGroup.addButton(self.pushButton_13)
-        self.verticalLayout_2.addWidget(self.pushButton_13)
-        self.pushButton_14 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_14.setObjectName("pushButton_14")
-        self.buttonGroup.addButton(self.pushButton_14)
-        self.verticalLayout_2.addWidget(self.pushButton_14)
-        self.pushButton_15 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_15.setObjectName("pushButton_15")
-        self.buttonGroup.addButton(self.pushButton_15)
-        self.verticalLayout_2.addWidget(self.pushButton_15)
-        self.pushButton_16 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_16.setObjectName("pushButton_16")
-        self.buttonGroup.addButton(self.pushButton_16)
-        self.verticalLayout_2.addWidget(self.pushButton_16)
-        self.pushButton_17 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_17.setObjectName("pushButton_17")
-        self.buttonGroup.addButton(self.pushButton_17)
-        self.verticalLayout_2.addWidget(self.pushButton_17)
-        self.pushButton_18 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_18.setObjectName("pushButton_18")
-        self.buttonGroup.addButton(self.pushButton_18)
-        self.verticalLayout_2.addWidget(self.pushButton_18)
-        self.pushButton_19 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_19.setObjectName("pushButton_19")
-        self.buttonGroup.addButton(self.pushButton_19)
-        self.verticalLayout_2.addWidget(self.pushButton_19)
-        self.pushButton_20 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.pushButton_20.setObjectName("pushButton_20")
-        self.buttonGroup.addButton(self.pushButton_20)
-        self.verticalLayout_2.addWidget(self.pushButton_20)
         self.verticalLayout_3.addLayout(self.verticalLayout_2)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -399,26 +317,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Акции"))
-        self.pushButton_4.setText(_translate("MainWindow", "Amazon"))
-        self.pushButton.setText(_translate("MainWindow", "Apple"))
-        self.pushButton_2.setText(_translate("MainWindow", "Tesla"))
-        self.pushButton_3.setText(_translate("MainWindow", "Microsoft"))
-        self.pushButton_5.setText(_translate("MainWindow", "AMD"))
-        self.pushButton_6.setText(_translate("MainWindow", "Intel"))
-        self.pushButton_7.setText(_translate("MainWindow", "Alphabet"))
-        self.pushButton_8.setText(_translate("MainWindow", "Berkshire Hathaway"))
-        self.pushButton_9.setText(_translate("MainWindow", "Johnson & Johnson"))
-        self.pushButton_10.setText(_translate("MainWindow", "Meta Platform"))
-        self.pushButton_11.setText(_translate("MainWindow", "Visa"))
-        self.pushButton_12.setText(_translate("MainWindow", "Mastercard"))
-        self.pushButton_13.setText(_translate("MainWindow", "Nvidia"))
-        self.pushButton_14.setText(_translate("MainWindow", "Electronic Arts"))
-        self.pushButton_15.setText(_translate("MainWindow", "Ubisoft"))
-        self.pushButton_16.setText(_translate("MainWindow", "Yandex"))
-        self.pushButton_17.setText(_translate("MainWindow", "Samsung"))
-        self.pushButton_18.setText(_translate("MainWindow", "Gold Dec 22"))
-        self.pushButton_19.setText(_translate("MainWindow", "S&P 500"))
-        self.pushButton_20.setText(_translate("MainWindow", "Toyota"))
         self.label.setText(_translate("MainWindow", "Компании"))
         self.label_2.setText(_translate("MainWindow", "Избраное"))
         self.pushButton_21.setText(_translate("MainWindow", "Добавить *"))
@@ -434,13 +332,7 @@ class Window(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.figure = plt.figure()
         self.setLayout(self.verticalLayout)
-        for i in self.buttonGroup.buttons():  # Подключаем группу кнопок
-            if i.text() == 'Amazon':
-                i.setEnabled(False)
-                self.verticalLayout_2.addWidget(i)
-            if self.like(i.text()) == (1,):  # Проверяем есть ли кнопка в избранном
-                self.verticalLayout_4.addWidget(i)  # Если да, то переносим в layout избранное
-            i.clicked.connect(self.plot_demo)
+        self.create_buttons()
         self.canvas = FigureCanvas(self.figure)
         self.toolbar = NavigationToolbar(self.canvas, self)
         self.verticalLayout.addWidget(self.toolbar)
@@ -458,6 +350,31 @@ class Window(QMainWindow, Ui_MainWindow):
         self.about_action.triggered.connect(self.about)
         self.inters = {'День': '1d', '5 дней': '5d', 'Неделя': '1wk', 'Месяц': '1mo',
                        '3 месяца': '3mo'}
+
+    def create_buttons(self):  # Создаём кнопки
+        btns = self.btn()
+        for i in btns.keys():  # Берём названия из словаря
+            if i == 'Amazon':
+                continue
+            a = QPushButton(i, self)
+            a.clicked.connect(self.plot_demo)
+            if btns[i] == 1:  # Проверяем есть ли кнопка в избранном
+                self.verticalLayout_4.addWidget(a)  # Если да, то переносим в layout избранное
+            else:
+                self.verticalLayout_2.addWidget(a)  # Если нет, то переносим в layout компании
+
+    def btn(self):  # Подключаем бд
+        a = []
+        con = sqlite3.connect('companies.sqlite')
+        cur = con.cursor()
+
+        result = cur.execute(f"""SELECT name, favorite FROM companies""")
+
+        for i in result:
+            a.append(i)
+        return {k: v for k, v in a}  # Создаём словарь с именами и значением избранного
+
+        con.close()
 
     def about(self):  # Вызываем окно 'О программе'
         self.aboutwindow.show()
@@ -562,7 +479,8 @@ class Window(QMainWindow, Ui_MainWindow):
 
         start = dt.now().date() - timedelta(days=7)  # Начало
         end = dt.now().date()  # Конец
-        price = yf.download(*self.comp(company), start=start, end=end, interval="1m")['Adj Close'][-1]  # Актуальная цена
+        price = yf.download(*self.comp(company), start=start, end=end, interval="1m")['Adj Close'][
+            -1]  # Актуальная цена
 
         cur.execute(f"""UPDATE companies
                     SET date = '{dt.now()}'
@@ -580,17 +498,6 @@ class Window(QMainWindow, Ui_MainWindow):
 
         result = cur.execute(f"""SELECT site FROM companies
                             WHERE name = '{name}'""")
-
-        for elem in result:
-            return elem
-        con.close()
-
-    def like(self, name):  # Проверяем есть ли компания в избранном
-        con = sqlite3.connect('companies.sqlite')
-        cur = con.cursor()
-
-        result = cur.execute(f"""SELECT favorite FROM companies
-                                    WHERE name = '{name}'""")
 
         for elem in result:
             return elem

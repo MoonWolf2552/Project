@@ -4,7 +4,7 @@ from datetime import datetime as dt, timedelta
 
 import matplotlib.pyplot as plt
 import yfinance as yf
-from PyQt5.QtWidgets import QApplication, QMainWindow, QInputDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow, QInputDialog, QPushButton
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 
@@ -21,13 +21,7 @@ class Window(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.figure = plt.figure()
         self.setLayout(self.verticalLayout)
-        for i in self.buttonGroup.buttons():  # Подключаем группу кнопок
-            if i.text() == 'Amazon':
-                i.setEnabled(False)
-                self.verticalLayout_2.addWidget(i)
-            if self.like(i.text()) == (1,):  # Проверяем есть ли кнопка в избранном
-                self.verticalLayout_4.addWidget(i)  # Если да, то переносим в layout избранное
-            i.clicked.connect(self.plot_demo)
+        self.create_buttons()
         self.canvas = FigureCanvas(self.figure)
         self.toolbar = NavigationToolbar(self.canvas, self)
         self.verticalLayout.addWidget(self.toolbar)
@@ -45,6 +39,31 @@ class Window(QMainWindow, Ui_MainWindow):
         self.about_action.triggered.connect(self.about)
         self.inters = {'День': '1d', '5 дней': '5d', 'Неделя': '1wk', 'Месяц': '1mo',
                        '3 месяца': '3mo'}
+
+    def create_buttons(self):  # Создаём кнопки
+        btns = self.btn()
+        for i in btns.keys():  # Берём названия из словаря
+            if i == 'Amazon':
+                continue
+            a = QPushButton(i, self)
+            a.clicked.connect(self.plot_demo)
+            if btns[i] == 1:  # Проверяем есть ли кнопка в избранном
+                self.verticalLayout_4.addWidget(a)  # Если да, то переносим в layout избранное
+            else:
+                self.verticalLayout_2.addWidget(a)  # Если нет, то переносим в layout компании
+
+    def btn(self):  # Подключаем бд
+        a = []
+        con = sqlite3.connect('companies.sqlite')
+        cur = con.cursor()
+
+        result = cur.execute(f"""SELECT name, favorite FROM companies""")
+
+        for i in result:
+            a.append(i)
+        return {k: v for k, v in a}  # Создаём словарь с именами и значением избранного
+
+        con.close()
 
     def about(self):  # Вызываем окно 'О программе'
         self.aboutwindow.show()
@@ -149,7 +168,8 @@ class Window(QMainWindow, Ui_MainWindow):
 
         start = dt.now().date() - timedelta(days=7)  # Начало
         end = dt.now().date()  # Конец
-        price = yf.download(*self.comp(company), start=start, end=end, interval="1m")['Adj Close'][-1]  # Актуальная цена
+        price = yf.download(*self.comp(company), start=start, end=end, interval="1m")['Adj Close'][
+            -1]  # Актуальная цена
 
         cur.execute(f"""UPDATE companies
                     SET date = '{dt.now()}'
